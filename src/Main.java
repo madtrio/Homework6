@@ -42,5 +42,13 @@ public class Main {
             save = save + cash;
             System.out.println("Месяц " + i + ",сумма накоплений равна " + save + " рублей");
         }
+
+        System.out.println("Task 9");
+        int cash1 = 29000;
+        int save1 = 0;
+        for (int i = 0; i<12; i++) {
+            save1 = save1 + cash1 + save1/100;
+            System.out.println("Месяц " + i + ",сумма накоплений равна " + save1 + " рублей");
+        }
     }
 }
