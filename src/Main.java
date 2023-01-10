@@ -29,5 +29,10 @@ public class Main {
         for (int i = 7; i<=98; i=i+7) {
             System.out.println(i);
         }
+
+        System.out.println("Task 7");
+        for (int i = 1; i<=512; i=i+i) {
+            System.out.println(i);
+        }
     }
 }
