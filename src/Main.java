@@ -34,5 +34,12 @@ public class Main {
         for (int i = 1; i<=512; i=i+i) {
             System.out.println(i);
         }
+
+        System.out.println("Task 8");
+        int cash = 0;
+        for (int i = 0; i<12; i++) {
+            cash = cash + 29000;
+            System.out.println("Месяц " + i + ",сумма накоплений равна " + cash + " рублей");
+        }
     }
 }
