@@ -192,5 +192,12 @@ public class Main {
 
     public static void task18() {
         System.out.println("Task 18");
+        int year = 0;
+        while (year <3000) {
+            year = year + 79;
+            if (year > 1823 && year < 2123) {
+                System.out.println(year);
+            }
+        }
     }
 }
