@@ -10,6 +10,8 @@ public class Main {
         task8();
         task9();
         task10();
+        task11();
+        task12();
     }
         public static void task1 () {
             System.out.println("Task 1");
@@ -79,5 +81,20 @@ public class Main {
                 twoTwo = two * i;
                 System.out.println(two + " * " + i + " = " + twoTwo);
         }
+    }
+    public static void task11 ()    {
+        System.out.println("Task 11");
+        int month = 0;
+        int savings2 = 0;
+        int salary2 = 15000;
+        while (savings2 <= 2_459_000) {
+            month = month + 1;
+            savings2 = savings2 + salary2;
+            System.out.println("Месяц " + month + " сумма накоплений равна " + savings2 + " рублей");
+        }
+    }
+    public static void task12 () {
+        System.out.println("Task 12");
+
     }
 }
