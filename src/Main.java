@@ -16,6 +16,8 @@ public class Main {
         task14();
         task15();
         task16();
+        task17();
+        task18();
     }
 
     public static void task1() {
@@ -178,5 +180,17 @@ public class Main {
                 System.out.println(" ");
             }
         }
+    }
+    public static void task17() {
+        System.out.println("Task 17");
+        int friday = 6;
+        while (friday <=31) {
+            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            friday = friday + 7;
+        }
+    }
+
+    public static void task18() {
+        System.out.println("Task 18");
     }
 }
