@@ -15,6 +15,7 @@ public class Main {
         task13();
         task14();
         task15();
+        task16();
     }
 
     public static void task1() {
@@ -152,13 +153,28 @@ public class Main {
     public static void task15() {
         System.out.println("Task 15");
         double savings15 = 15000.00;
-                int month15 = 0;
+        int month15 = 0;
         while (savings15 <= 12_100_000) {
             month15++;
             savings15 = savings15 + savings15 * 0.07;
             if (month15 % 6 == 0) {
                 System.out.print("Месяц " + month15 + " Итого ");
                 System.out.format("%.2f", savings15);
+                System.out.println(" ");
+            }
+        }
+    }
+
+    public static void task16() {
+        System.out.println("Task 16");
+        double savings16 = 15000.00;
+        int month16 = 0;
+        while (month16 <= 108) {
+            month16++;
+            savings16 = savings16 + savings16 * 0.07;
+            if (month16 % 6 == 0) {
+                System.out.print("Месяц " + month16 + " Итого ");
+                System.out.format("%.2f", savings16);
                 System.out.println(" ");
             }
         }
