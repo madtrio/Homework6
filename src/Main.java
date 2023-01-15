@@ -12,6 +12,7 @@ public class Main {
         task10();
         task11();
         task12();
+        task13();
     }
 
     public static void task1() {
@@ -117,6 +118,19 @@ public class Main {
             System.out.print(r + " ");
             r--;
         }
+        System.out.println(" ");
+    }
 
+    public static void task13() {
+        System.out.println("Task 13");
+        int totalPop = 12_000_000;
+        int yearBirth = totalPop / 1000 * 17;
+        int yearDeath = totalPop / 1000 * 8;
+        int year = 0;
+        while (year < 10) {
+            year++;
+            totalPop = totalPop + yearBirth - yearDeath;
+        }
+        System.out.println("Год " + year + " численность населения составляет " + totalPop);
     }
 }
