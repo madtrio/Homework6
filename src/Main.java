@@ -14,6 +14,7 @@ public class Main {
         task12();
         task13();
         task14();
+        task15();
     }
 
     public static void task1() {
@@ -144,6 +145,21 @@ public class Main {
             savings14 = savings14 + savings14 * 0.07;
             if (savings14 > 12_000_000) {
                 System.out.println("Месяц " + month14 + " Итого " + savings14);
+            }
+        }
+    }
+
+    public static void task15() {
+        System.out.println("Task 15");
+        double savings15 = 15000.00;
+                int month15 = 0;
+        while (savings15 <= 12_100_000) {
+            month15++;
+            savings15 = savings15 + savings15 * 0.07;
+            if (month15 % 6 == 0) {
+                System.out.print("Месяц " + month15 + " Итого ");
+                System.out.format("%.2f", savings15);
+                System.out.println(" ");
             }
         }
     }
