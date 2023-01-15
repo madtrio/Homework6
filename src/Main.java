@@ -181,10 +181,11 @@ public class Main {
             }
         }
     }
+
     public static void task17() {
         System.out.println("Task 17");
         int friday = 6;
-        while (friday <=31) {
+        while (friday <= 31) {
             System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
             friday = friday + 7;
         }
@@ -193,7 +194,7 @@ public class Main {
     public static void task18() {
         System.out.println("Task 18");
         int year = 0;
-        while (year <3000) {
+        while (year < 3000) {
             year = year + 79;
             if (year > 1823 && year < 2123) {
                 System.out.println(year);
