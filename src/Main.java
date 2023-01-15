@@ -13,6 +13,7 @@ public class Main {
         task11();
         task12();
         task13();
+        task14();
     }
 
     public static void task1() {
@@ -132,5 +133,18 @@ public class Main {
             totalPop = totalPop + yearBirth - yearDeath;
         }
         System.out.println("Год " + year + " численность населения составляет " + totalPop);
+    }
+
+    public static void task14() {
+        System.out.println("Task 14");
+        double savings14 = 15000.00;
+        int month14 = 0;
+        while (savings14 <= 12_100_000) {
+            month14++;
+            savings14 = savings14 + savings14 * 0.07;
+            if (savings14 > 12_000_000) {
+                System.out.println("Месяц " + month14 + " Итого " + savings14);
+            }
+        }
     }
 }
